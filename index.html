@@ -247,145 +247,146 @@
             </div>
         </div>
 
-        <!-- Checkout Form Section (Hidden by default until a plan is selected) -->
-        <div id="checkout-section" class="max-w-2xl mx-auto mt-12 hidden">
-            <div class="glass-card rounded-3xl p-6 md:p-8">
-                <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+        <!-- Checkout Form Section (Đã mở rộng lên max-w-3xl) -->
+        <div id="checkout-section" class="max-w-3xl mx-auto mt-12 hidden">
+            <div class="glass-card rounded-3xl p-6 md:p-10">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-6 flex items-center gap-3">
                     <i class="ph-fill ph-shopping-cart text-brand-400"></i> Hoàn tất đơn hàng
                 </h3>
                 
-                <div class="bg-slate-800/50 rounded-xl p-4 mb-6 flex justify-between items-center border border-slate-700">
+                <div class="bg-slate-800/50 rounded-xl p-5 mb-8 flex justify-between items-center border border-slate-700">
                     <div>
                         <p class="text-sm text-slate-400 mb-1">Gói đã chọn:</p>
-                        <p id="selected-plan-name" class="font-bold text-lg text-brand-400">Gói Vĩnh Viễn</p>
+                        <p id="selected-plan-name" class="font-bold text-xl sm:text-2xl text-brand-400">Gói Vĩnh Viễn</p>
                     </div>
                     <div class="text-right">
                         <p class="text-sm text-slate-400 mb-1">Thành tiền:</p>
-                        <p id="selected-plan-price" class="font-bold text-xl">500.000đ</p>
+                        <p id="selected-plan-price" class="font-bold text-2xl sm:text-3xl">500.000đ</p>
                     </div>
                 </div>
 
-                <div id="step-1-form">
-                    <p class="mb-4 text-slate-300">Vui lòng nhập thông tin để chúng tôi gửi file cấu hình VPN cho bạn sau khi thanh toán thành công.</p>
+                <!-- Step 1: Form Info -->
+                <div id="step-1-form" class="max-w-2xl mx-auto">
+                    <p class="mb-5 text-slate-300 text-lg">Vui lòng nhập thông tin để chúng tôi gửi file cấu hình VPN cho bạn sau khi thanh toán thành công.</p>
                     
-                    <div class="mb-5">
-                        <label class="block text-sm font-medium mb-2 text-slate-300">Nhận gói qua đâu?</label>
-                        <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                    <div class="mb-6">
+                        <label class="block text-base font-medium mb-3 text-slate-300">Nhận gói qua đâu?</label>
+                        <div class="grid grid-cols-3 gap-3 sm:gap-4">
                             <label class="cursor-pointer relative">
                                 <input type="radio" name="contact_method" value="gmail" class="peer sr-only" checked onchange="updateInputPlaceholder()">
-                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-2 sm:px-4 sm:py-3 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
-                                    <i class="ph-fill ph-envelope-simple text-xl sm:text-2xl text-red-400 mb-1"></i>
-                                    <p class="text-xs sm:text-sm font-medium">Gmail</p>
+                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-3 sm:px-4 sm:py-4 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
+                                    <i class="ph-fill ph-envelope-simple text-2xl sm:text-3xl text-red-400 mb-2"></i>
+                                    <p class="text-sm sm:text-base font-medium">Gmail</p>
                                 </div>
                             </label>
                             <label class="cursor-pointer relative">
                                 <input type="radio" name="contact_method" value="zalo" class="peer sr-only" onchange="updateInputPlaceholder()">
-                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-2 sm:px-4 sm:py-3 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
-                                    <i class="ph-fill ph-chat-circle-text text-xl sm:text-2xl text-blue-400 mb-1"></i>
-                                    <p class="text-xs sm:text-sm font-medium">Zalo</p>
+                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-3 sm:px-4 sm:py-4 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
+                                    <i class="ph-fill ph-chat-circle-text text-2xl sm:text-3xl text-blue-400 mb-2"></i>
+                                    <p class="text-sm sm:text-base font-medium">Zalo</p>
                                 </div>
                             </label>
                             <label class="cursor-pointer relative">
                                 <input type="radio" name="contact_method" value="tiktok" class="peer sr-only" onchange="updateInputPlaceholder()">
-                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-2 sm:px-4 sm:py-3 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
-                                    <i class="ph-fill ph-tiktok-logo text-xl sm:text-2xl text-white mb-1"></i>
-                                    <p class="text-xs sm:text-sm font-medium">TikTok ID</p>
+                                <div class="rounded-xl border border-slate-600 bg-slate-800/50 px-2 py-3 sm:px-4 sm:py-4 text-center hover:bg-slate-700 peer-checked:border-brand-500 peer-checked:bg-brand-500/10 transition-all">
+                                    <i class="ph-fill ph-tiktok-logo text-2xl sm:text-3xl text-white mb-2"></i>
+                                    <p class="text-sm sm:text-base font-medium">TikTok ID</p>
                                 </div>
                             </label>
                         </div>
                     </div>
 
-                    <div class="mb-6">
-                        <label id="input-label" class="block text-sm font-medium mb-2 text-slate-300">Nhập địa chỉ Gmail của bạn</label>
-                        <input type="text" id="contact-info" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors text-white placeholder-slate-500" placeholder="ví dụ: nguyenvan@gmail.com">
+                    <div class="mb-8">
+                        <label id="input-label" class="block text-base font-medium mb-3 text-slate-300">Nhập địa chỉ Gmail của bạn</label>
+                        <input type="text" id="contact-info" class="w-full bg-slate-900 border border-slate-600 rounded-xl px-5 py-4 text-lg focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-colors text-white placeholder-slate-500" placeholder="ví dụ: nguyenvan@gmail.com">
                         <p id="error-msg" class="text-red-400 text-sm mt-2 hidden">Vui lòng nhập thông tin liên hệ!</p>
                     </div>
 
-                    <button onclick="generatePayment()" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-lg transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)]">
+                    <button onclick="generatePayment()" class="w-full py-4 sm:py-5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-lg sm:text-xl transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)]">
                         Xác nhận & Tiến hành Thanh toán
                     </button>
                 </div>
 
-                <!-- Payment Step (Hidden initially) -->
+                <!-- Step 2: Payment (Đã phóng to QR code) -->
                 <div id="step-2-payment" class="hidden">
-                    <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-4 mb-6 flex gap-3 text-sm">
-                        <i class="ph-fill ph-info text-brand-400 text-xl shrink-0"></i>
+                    <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-5 mb-8 flex gap-4 text-base">
+                        <i class="ph-fill ph-info text-brand-400 text-2xl shrink-0"></i>
                         <p>Quét mã QR bằng App Ngân Hàng hoặc copy thông tin bên dưới để chuyển khoản. Hệ thống sẽ tự động duyệt khi nhận được tiền.</p>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
-                        <!-- QR Code -->
-                        <div class="bg-white p-4 rounded-2xl flex flex-col items-center justify-center">
-                            <img id="qr-image" src="" alt="Mã QR Thanh Toán" class="w-40 h-40 sm:w-48 sm:h-48 object-contain mb-2">
-                            <p class="text-slate-800 font-bold text-xs sm:text-sm text-center">Quét mã bằng ứng dụng ngân hàng</p>
-                            <img src="https://img.vietqr.io/image/vietqr.png" class="h-3 sm:h-4 mt-2 opacity-50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        <!-- QR Code Area (Phóng to tối đa) -->
+                        <div class="bg-white p-6 sm:p-8 rounded-[32px] flex flex-col items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+                            <img id="qr-image" src="" alt="Mã QR Thanh Toán" class="w-64 h-64 sm:w-80 sm:h-80 object-contain mb-4">
+                            <p class="text-slate-800 font-bold text-sm sm:text-base text-center">Quét mã bằng ứng dụng ngân hàng</p>
+                            <img src="https://iocrealty.com/wp-content/uploads/images/lich-su-phat-trien-logo-mb-bank-qua-cac-thoi-ky-tu-1994-2023-0.png" class="h-4 sm:h-5 mt-3 opacity-60">
                         </div>
 
-                        <!-- Bank Details -->
-                        <div class="space-y-3 sm:space-y-4">
+                        <!-- Bank Details Area -->
+                        <div class="space-y-5 sm:space-y-6">
                             <div>
-                                <p class="text-xs sm:text-sm text-slate-400 mb-1">Ngân hàng</p>
-                                <p class="font-bold text-base sm:text-lg">MB BANK</p>
+                                <p class="text-sm sm:text-base text-slate-400 mb-1">Ngân hàng</p>
+                                <p class="font-bold text-lg sm:text-xl">MB BANK</p>
                             </div>
                             
                             <div>
-                                <p class="text-xs sm:text-sm text-slate-400 mb-1">Chủ tài khoản</p>
-                                <p class="font-bold text-base sm:text-lg">HUỲNH HẢI DƯƠNG</p>
+                                <p class="text-sm sm:text-base text-slate-400 mb-1">Chủ tài khoản</p>
+                                <p class="font-bold text-lg sm:text-xl">HUỲNH HẢI DƯƠNG</p>
                             </div>
 
                             <div>
-                                <p class="text-xs sm:text-sm text-slate-400 mb-1">Số tài khoản</p>
-                                <div class="flex items-center gap-2">
-                                    <p class="font-bold text-xl sm:text-2xl text-brand-400 font-mono tracking-wider">911612580</p>
-                                    <button onclick="copyToClipboard('911612580')" class="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300" title="Copy số tài khoản">
-                                        <i class="ph ph-copy text-base sm:text-lg"></i>
+                                <p class="text-sm sm:text-base text-slate-400 mb-1">Số tài khoản</p>
+                                <div class="flex items-center gap-3">
+                                    <p class="font-bold text-2xl sm:text-3xl text-brand-400 font-mono tracking-wider">911612580</p>
+                                    <button onclick="copyToClipboard('911612580')" class="p-3 bg-slate-800 hover:bg-slate-700 rounded-xl transition-colors text-slate-300 shadow-md" title="Copy số tài khoản">
+                                        <i class="ph ph-copy text-xl"></i>
                                     </button>
                                 </div>
                             </div>
 
                             <div>
-                                <p class="text-xs sm:text-sm text-slate-400 mb-1">Số tiền</p>
-                                <div class="flex items-center gap-2">
-                                    <p id="display-amount" class="font-bold text-lg sm:text-xl text-white">500.000 VNĐ</p>
-                                    <button id="btn-copy-amount" onclick="copyToClipboard('500000')" class="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300" title="Copy số tiền">
-                                        <i class="ph ph-copy text-base sm:text-lg"></i>
+                                <p class="text-sm sm:text-base text-slate-400 mb-1">Số tiền</p>
+                                <div class="flex items-center gap-3">
+                                    <p id="display-amount" class="font-bold text-xl sm:text-2xl text-white">500.000 VNĐ</p>
+                                    <button id="btn-copy-amount" onclick="copyToClipboard('500000')" class="p-3 bg-slate-800 hover:bg-slate-700 rounded-xl transition-colors text-slate-300 shadow-md" title="Copy số tiền">
+                                        <i class="ph ph-copy text-xl"></i>
                                     </button>
                                 </div>
                             </div>
 
                             <div>
-                                <p class="text-xs sm:text-sm text-slate-400 mb-1">Nội dung chuyển khoản (Bắt buộc ghi đúng)</p>
-                                <div class="flex items-center gap-2">
-                                    <p id="display-content" class="font-bold text-base sm:text-lg text-accent-400 bg-slate-800 px-3 py-1 rounded border border-slate-700 break-all">NIKO abc</p>
-                                    <button id="btn-copy-content" onclick="" class="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors text-slate-300 shrink-0" title="Copy nội dung">
-                                        <i class="ph ph-copy text-base sm:text-lg"></i>
+                                <p class="text-sm sm:text-base text-slate-400 mb-1">Nội dung chuyển khoản (Bắt buộc ghi đúng)</p>
+                                <div class="flex items-center gap-3">
+                                    <p id="display-content" class="font-bold text-lg sm:text-xl text-accent-400 bg-slate-800 px-4 py-2 rounded-lg border border-slate-700 break-all shadow-inner">NIKO abc</p>
+                                    <button id="btn-copy-content" onclick="" class="p-3 bg-slate-800 hover:bg-slate-700 rounded-xl transition-colors text-slate-300 shrink-0 shadow-md" title="Copy nội dung">
+                                        <i class="ph ph-copy text-xl"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-8 border-t border-slate-700 pt-6">
-                        <button onclick="completeOrder()" class="w-full py-4 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-lg transition-all shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] flex items-center justify-center gap-2">
-                            <i class="ph-fill ph-check-circle text-xl"></i> Tôi đã chuyển khoản thành công
+                    <div class="mt-10 border-t border-slate-700 pt-8">
+                        <button onclick="completeOrder()" class="w-full py-4 sm:py-5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-lg sm:text-xl transition-all shadow-[0_4px_14px_0_rgba(16,185,129,0.39)] flex items-center justify-center gap-3">
+                            <i class="ph-fill ph-check-circle text-2xl"></i> Tôi đã chuyển khoản thành công
                         </button>
-                        <button onclick="resetForm()" class="w-full py-3 mt-3 rounded-xl bg-transparent hover:bg-slate-800 text-slate-400 font-medium text-sm transition-all">
+                        <button onclick="resetForm()" class="w-full py-4 mt-3 rounded-xl bg-transparent hover:bg-slate-800 text-slate-400 font-medium text-base transition-all">
                             Quay lại sửa thông tin
                         </button>
                     </div>
                 </div>
 
-                <!-- Success State -->
-                <div id="step-3-success" class="hidden text-center py-8">
-                    <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="ph-fill ph-check-circle text-5xl text-green-400"></i>
+                <!-- Step 3: Success State -->
+                <div id="step-3-success" class="hidden text-center py-12">
+                    <div class="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="ph-fill ph-check-circle text-6xl text-green-400"></i>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3">Đã Ghi Nhận Yêu Cầu!</h3>
-                    <p class="text-slate-300 mb-6 max-w-md mx-auto">
-                        Chúng tôi đang kiểm tra giao dịch của bạn. Nếu thành công, gói VPN sẽ được gửi qua <strong id="success-method" class="text-white"></strong> của bạn trong vài phút tới.
+                    <h3 class="text-3xl font-bold mb-4">Đã Ghi Nhận Yêu Cầu!</h3>
+                    <p class="text-slate-300 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
+                        Chúng tôi đang kiểm tra giao dịch của bạn. Nếu thành công, gói VPN sẽ được gửi qua <strong id="success-method" class="text-white text-xl"></strong> của bạn trong vài phút tới.
                     </p>
-                    <p class="text-sm text-slate-400 bg-slate-800/50 p-4 rounded-xl inline-block">
-                        Hỗ trợ khẩn cấp? Liên hệ trực tiếp Zalo: <strong>Niko Tuấn Anh</strong>
+                    <p class="text-base text-slate-400 bg-slate-800/50 p-5 rounded-xl inline-block border border-slate-700">
+                        Hỗ trợ khẩn cấp? Liên hệ trực tiếp Zalo: <strong class="text-white">Niko Tuấn Anh</strong>
                     </p>
                 </div>
 
