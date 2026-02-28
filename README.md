@@ -2,7 +2,7 @@
 # Mình đang bán gói này với giá 500k vĩnh viễn 
 # 300k cho 6 tháng
 # chỉ 50 slot gói 500k và 100 slot gói 300k
-Vào [web mua ngay](https://linkwebmuavpn.com) kẻo hết nhé!
+# Vào [web mua ngay](https://tunapath4g.github.io/nikovpn/) kẻo hết nhé!
 
 ## 1. VPN MAX hoạt động như thế nào
 
