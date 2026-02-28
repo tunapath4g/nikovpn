@@ -1,4 +1,4 @@
-# VPN MAX – Niko Chan VPN
+# TunaPath - Niko Chan VPN
 # Mình đang bán gói này với giá 500k vĩnh viễn 
 # 300k cho 6 tháng
 # chỉ 50 slot gói 500k và 100 slot gói 300k
