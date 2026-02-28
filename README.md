@@ -1,8 +1,9 @@
 # VPN MAX – Niko Chan VPN
-# Tôi đang bán gói này với giá 500k vĩnh viễn 
+# Mình đang bán gói này với giá 500k vĩnh viễn 
 # 300k cho 6 tháng
-# chỉ 50 slot cho gói 500k và 100 slot cho gói 300k
-# Vào mua ngay kẻo hết nhé do mở giới hạn
+# chỉ 50 slot gói 500k và 100 slot gói 300k
+# Vào web mua ngay kẻo hết nhé do chỉ mở đăng kí giới hạn.
+
 ## 1. VPN MAX hoạt động như thế nào
 
 ---
@@ -69,7 +70,7 @@ Một số nhà mạng áp dụng chính sách zero-rating cho dịch vụ đố
 
 1. Đăng ký gói nền miễn phí của dịch vụ được zero-rate.  
 2. Cấu hình VPN MAX với:
-   - SNI = domain được miễn phí - không cần nền
+   - SNI = domain được miễn phí - không cần nền ( đã được mã hóa nhà mạng )
 3. Nhà mạng:
    - Đọc trường SNI trong TLS handshake  
    - Nếu domain nằm trong whitelist → không tính cước  
