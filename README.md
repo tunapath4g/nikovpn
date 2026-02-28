@@ -1,9 +1,10 @@
 # VPN MAX – Niko Chan VPN
-
+# Tôi đang bán gói này với giá 500k vĩnh viễn 
+# 300k cho 6 tháng
+# chỉ 50 slot cho gói 500k và 100 slot cho gói 300k
+# Vào mua ngay kẻo hết nhé do mở giới hạn
 ## 1. VPN MAX hoạt động như thế nào
 
-VPN MAX sử dụng giao thức mã hóa tương tự VMess, được thiết kế nhằm che giấu traffic khỏi hệ thống Deep Packet Inspection (DPI) — công nghệ mà ISP hoặc nhà mạng sử dụng để phân tích gói tin mạng.
-tôi đang bán gói này với giá 500k vĩnh viễn và 300k cho 6 tháng, chỉ 50 slot cho gói 500k và 100 slot cho gói 300k
 ---
 
 ### Luồng hoạt động cơ bản
